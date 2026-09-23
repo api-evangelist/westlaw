@@ -1,23 +1,90 @@
 aid: westlaw
+
 name: Westlaw
-description: 'Westlaw is a company surfaced via the API Evangelist harvest backlog (source: legal) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://legal.thomsonreuters.com/content/dam/ue/en-us/images/og-image/243454.png.transform/rect-768/q90/image.png
+
+description: Westlaw, a Thomson Reuters legal research platform, provides AI‑enhanced tools, extensive case law, statutes, and practical guidance
+  for law firms, businesses, and government agencies. Leveraging over 175 years of legal expertise, Westlaw delivers trusted research, drafting
+  assistance, and compliance solutions across a wide range of practice areas.
+
 url: https://raw.githubusercontent.com/api-evangelist/westlaw/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:legal
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
-- Company
-apis: []
+- LegalTech
+- Research
+- AI
+- ThomsonReuters
+- Westlaw
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/westlaw-hosts.yml
+- type: Vendors
+  url: vendors/westlaw-vendors.yml
+- type: TermsOfService
+  url: https://www.thomsonreuters.com/en/terms-of-use.html
+- type: Support
+  url: https://legal.thomsonreuters.com/en/support
+- type: SDKs
+  url: https://legal.thomsonreuters.com/en/products/practical-law/government/libraries
+- type: PrivacyPolicy
+  url: https://www.thomsonreuters.com/en/privacy-statement
+- type: Pricing
+  url: https://legal.thomsonreuters.com/en/westlaw/plans-and-pricing
+- type: Newsroom
+  url: https://legal.thomsonreuters.com/en/insights/reports/2025-state-of-corporate-law-department-report/media
+- type: Login
+  url: https://community.thomsonreuters.com/login
+- type: ChangeLog
+  url: https://legal.thomsonreuters.com/en/products/highq/whats-new
+- type: Blog
+  url: https://legal.thomsonreuters.com/blog/
+- type: GettingStarted
+  url: https://legal.thomsonreuters.com/en/insights/white-papers/building-digital-trust-into-your-onboarding-tech-stack
+- type: Documentation
+  url: https://developers.thomsonreuters.com/
+- type: DomainSecurity
+  url: security/westlaw-domain-security.yml
 - type: Website
   url: https://legal.thomsonreuters.com/en/westlaw
+
+apis:
+- name: Westlaw API
+  description: Developer portal for Westlaw APIs and integration resources.
+  humanURL: https://developers.thomsonreuters.com/
+  aid: westlaw:westlaw-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal renders JavaScript and provides no machine‑readable OpenAPI, GraphQL, AsyncAPI, or WSDL specifications.
+  evidence:
+  - url: https://developers.thomsonreuters.com/
+    status: 200
+  checked: 2026-09-23
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
