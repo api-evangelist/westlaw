@@ -43,6 +43,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Plans
+  url: plans/westlaw-plans-pricing.yml
 - url: https://legal.thomsonreuters.com/blog/feed/
   type: BlogRSS
 - type: Hosts
