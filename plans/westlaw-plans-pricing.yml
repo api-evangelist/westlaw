@@ -1,0 +1,30 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://legal.thomsonreuters.com/en/westlaw/plans-and-pricing
+sources:
+- https://legal.thomsonreuters.com/en/westlaw/plans-and-pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: false
+note: No numeric price is published on the pricing page; Plan comparison page lists three Westlaw tiers
+  with links to pricing but shows no numeric prices; directs users to contact sales.
+plan_count: 3
+plans:
+- name: Westlaw Advantage
+  price_text: View Westlaw Advantage pricing
+  period: none
+- name: Westlaw Edge
+  price_text: View Westlaw Edge pricing
+  period: none
+- name: Westlaw Edge with AI-Assisted Research
+  price_text: View Westlaw Edge with AI-Assisted Research pricing
+  period: none
