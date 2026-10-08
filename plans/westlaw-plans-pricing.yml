@@ -28,3 +28,30 @@ plans:
 - name: Westlaw Edge with AI-Assisted Research
   price_text: View Westlaw Edge with AI-Assisted Research pricing
   period: none
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Westlaw Advantage
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Westlaw Edge
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Westlaw Edge with AI-Assisted Research
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
