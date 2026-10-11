@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "westlaw",
+    "captured_at": "2026-10-11T194331",
+    "source_url": "https://legal.thomsonreuters.com/en/westlaw",
+    "source_type": "Website",
+    "file": "westlaw-2026-10-11T194331.png",
+    "bytes": 101100,
+    "capture": "playwright-local"
+  }
+]
